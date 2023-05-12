@@ -18,5 +18,4 @@ const playRound = (final) => {
             console.log('Draw');
         } else {}
     }
-    console.log(rock);
 }
