@@ -1,7 +1,7 @@
 const getComputerChoice = (choice) => {
     const choiceArray = ['rock', 'paper', 'scissors'];
     const randomComputerChoice = (Math.floor(Math.random() * choiceArray.length));
-    return choice;
+    return choice = randomComputerChoice;
 }
 
 const getPlayerChoice = () => {
@@ -12,4 +12,5 @@ const playRound = () => {
     
 }
 
-getComputerChoice();
+console.log(getComputerChoice());
+
