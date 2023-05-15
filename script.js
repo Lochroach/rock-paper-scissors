@@ -35,4 +35,9 @@ const playRound = (playerChoice, computerChoice) => {
     return computerChoice, playerChoice;
 }
 
-playRound('rock', getComputerChoice());
+const playGame = () => {
+    const playerInput = prompt('Rock, Paper, or Scissors?');
+    playRound(getPlayerChoice(playerInput), getComputerChoice());
+}
+
+playGame();
