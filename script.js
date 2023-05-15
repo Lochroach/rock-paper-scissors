@@ -21,10 +21,10 @@ const playRound = (playerChoice, computerChoice) => {
         console.log('You Lose! Paper beats Rock.');
     } else if (playerChoice === 'paper' && computerChoice === 'scissors') {
         console.log('You Lose! Scissors beat Paper.');
-    } else if (playerChoice === 'scissor' && computerChoice === 'rock') {
+    } else if (playerChoice === 'scissors' && computerChoice === 'rock') {
         console.log('You Lose! Rock beats Scissors.');
     } else if (playerChoice === 'scissors' && computerChoice === 'paper') {
-        console.log('You Win! Scissors beat Paper.');
+        console.log('You Win! Scissors beats Paper.');
     } else if (playerChoice === 'paper' && computerChoice === 'rock') {
         console.log('You Win! Paper beats Rock.');
     } else if (playerChoice === 'rock' && computerChoice === 'scissors') {
