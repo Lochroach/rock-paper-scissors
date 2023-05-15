@@ -2,7 +2,7 @@ const choiceArray = ['rock', 'paper', 'scissors'];
 
 
 const getComputerChoice = (choice) => {
-    const randomComputerChoice = (Math.floor(Math.random() * choiceArray.length));
+    const randomComputerChoice = choiceArray[Math.floor(Math.random() * choiceArray.length)];
     return choice = randomComputerChoice;
 }
 
@@ -35,4 +35,4 @@ const playRound = (playerChoice, computerChoice) => {
     return computerChoice, playerChoice;
 }
 
-console.log(playRound('rock', 'rock'));
+playRound('rock', getComputerChoice());
