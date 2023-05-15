@@ -36,6 +36,8 @@ const playRound = (playerChoice, computerChoice) => {
 }
 
 const playGame = () => {
+    let playerScore = 0;
+    let computerScore = 0;
     for (let i = 1; i <= 5; i++) {
     const playerInput = prompt('Rock, Paper, or Scissors?');
     playRound(getPlayerChoice(playerInput), getComputerChoice());
