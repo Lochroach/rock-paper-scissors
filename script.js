@@ -1,5 +1,6 @@
 const choiceArray = ['rock', 'paper', 'scissors'];
-
+let playerScore = 0;
+let computerScore = 0;
 
 const getComputerChoice = (choice) => {
     const randomComputerChoice = choiceArray[Math.floor(Math.random() * choiceArray.length)];
@@ -35,13 +36,12 @@ const playRound = (playerChoice, computerChoice) => {
     return computerChoice, playerChoice;
 }
 
-const playGame = () => {
-    let playerScore = 0;
-    let computerScore = 0;
+const playGame = (playerScore, computerScore) => {
     for (let i = 1; i <= 5; i++) {
     const playerInput = prompt('Rock, Paper, or Scissors?');
     playRound(getPlayerChoice(playerInput), getComputerChoice());
     }
+    return playerScore, computerScore;
 }
 
 playGame();
